@@ -1,0 +1,40 @@
+.trailers {
+    padding: 60px 0 120px 0;
+    &__buttons {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        padding-bottom: 16px;
+    }
+    &__button {
+        border-radius: 8px;
+        padding: 14px 20px;
+        background-color: #272928;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        transition: .2s all;
+        &_active, &:focus {
+            background-color: #ff3d00;
+        }
+        &:hover {
+            background-color: #ff521b;
+        }
+    }
+    &__wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        // 9/16 будет 56.25%
+        height: 0;
+        overflow: hidden;
+    }
+    &__video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

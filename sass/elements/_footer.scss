@@ -1,0 +1,34 @@
+.footer {
+    line-height: 1.4;
+    padding: 40px 0;
+    background-color: #101010;
+    &__container { /* нарисовали сетку на 4 колонки,присвоили классам соответствующие названия */
+        display: grid;
+        gap: 36px;
+        grid-template-areas: 
+            "developers logo"
+            "copyright logo";
+    }
+    &__developers {
+        grid-area: developers;
+    }
+    &__copyright {
+        grid-area: copyright;
+    }
+    &__logo {
+        grid-area: logo;
+        justify-self: end; /* в гриде прижать к правому краю */
+        align-self: end; /* в гриде прижать к низу */
+        width: 287px;
+    }
+    &__link {
+        margin-bottom: 7px;
+        transition: .2s all;
+        &:nth-child(2) {
+            margin-bottom: 0;
+        }
+        &:hover {
+            color:#ff3d00;
+        }
+    }
+}
