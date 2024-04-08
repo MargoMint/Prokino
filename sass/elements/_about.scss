@@ -4,12 +4,13 @@
         display: flex;
         justify-content: space-between;
         gap: 20px;
-        ::after {
+        &:after {
             content:'';
-            display: flex;
+            display: block;
             flex-basis: 530px;
             background-image: url('/img/bg2.jpg');
-            background-image: webkit-image-set(
+            background-image: 
+            image-set(
                 url('/img/bg2@2x.avif') type('image/avif') 2x,
                 url('/img/bg2.avif') type('image/avif') 1x,
                 url('/img/bg2@2x.webp') type('image/webp') 2x,
@@ -33,5 +34,37 @@
     &__descr {
         font-weight: 400;
         font-size: 20px;
+    }
+}
+@media (max-width: 1024px) {
+    .about {
+        &__container {
+            ::after {
+                flex-basis: 436px;
+                background-image: url(/img/aang1024@2x.jpg);
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        &__container {
+            flex-direction: column;
+            ::after {
+                flex-basis: 300px;
+                background-image: url(/img/aang768@2x.jpg);
+            }
+        }
+        &__content {
+            flex-basis: auto;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .about {
+        &__container ::after {
+            flex-basis: 436px;
+            background-image: url(/img/aang320@2x.jpg);
+        }
     }
 }
