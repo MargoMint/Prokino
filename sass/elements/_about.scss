@@ -36,35 +36,4 @@
         font-size: 20px;
     }
 }
-@media (max-width: 1024px) {
-    .about {
-        &__container {
-            ::after {
-                flex-basis: 436px;
-                background-image: url(/img/aang1024@2x.jpg);
-            }
-        }
-    }
-}
-@media (max-width: 768px) {
-    .about {
-        &__container {
-            flex-direction: column;
-            ::after {
-                flex-basis: 300px;
-                background-image: url(/img/aang768@2x.jpg);
-            }
-        }
-        &__content {
-            flex-basis: auto;
-        }
-    }
-}
-@media (max-width: 320px) {
-    .about {
-        &__container ::after {
-            flex-basis: 436px;
-            background-image: url(/img/aang320@2x.jpg);
-        }
-    }
-}
+
