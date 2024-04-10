@@ -1,4 +1,23 @@
 @media (max-width: 1080px) {
+    .hero {
+        padding-top: calc(337 / 1024 * 100%);
+        padding-bottom: 50px;
+        &__banner {
+            width: 649px;
+        }
+        &__date {
+            font-size: 32px;
+        }
+        background-image: 
+            image-set(
+                url('/img/1bg-1024@2x.avif') type('image/avif') 2x,
+                url('/img/1bg-1024.avif') type('image/avif'),
+                url('/img/1bg-1024@2x.webp') type('image/webp') 2x,
+                url('/img/1bg-1024.webp') type('image/webp'),
+                url('/img/1bg-1024@2x.jpg') 2x,
+                url('/img/1bg-1024.jpg')
+            );
+    }
     .about {
         &__container {
             &:after {
@@ -20,6 +39,26 @@
         &__logo {
             width: 130px;
         }
+    }
+    .hero {
+        padding-top: calc(337 / 768 * 100%);
+        padding-bottom: 40px;
+        &__date {
+            margin-bottom: 12px;
+        }
+        &__arrow {
+            width: 36px;
+            height: 36px;
+        }
+        background-image: 
+            image-set(
+                url('/img/1bg-768@2x.avif') type('image/avif') 2x,
+                url('/img/1bg-768.avif') type('image/avif'),
+                url('/img/1bg-768@2x.webp') type('image/webp') 2x,
+                url('/img/1bg-768.webp') type('image/webp'),
+                url('/img/1bg-768@2x.jpg') 2x,
+                url('/img/1bg-768.jpg')
+            );
     }
     .about {
         &__container {
@@ -49,6 +88,26 @@
         &__link {
             display: none;
         }
+    }
+    .hero {
+        padding-top: calc(173 / 320 * 100%); /* величина отступа до верха / расширение экрана */
+        &__link {
+            display: block;
+            margin-bottom: 32px;
+            padding: 10px 16px;
+        }
+        &__date {
+            font-size: 20px;
+        }
+        background-image: 
+            image-set(
+                url('/img/1bg-320@2x.avif') type('image/avif') 2x,
+                url('/img/1bg-320.avif') type('image/avif'),
+                url('/img/1bg-320@2x.webp') type('image/webp') 2x,
+                url('/img/1bg-320.webp') type('image/webp'),
+                url('/img/1bg-320@2x.jpg') 2x,
+                url('/img/1bg-320.jpg')
+            );
     }
     .about {
         &__container {

@@ -1,9 +1,9 @@
 .hero {
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding-bottom: 60px;
-    padding-top: 33vw;
+    padding-top: calc(476 / 1440 * 100%);
     background-image: 
     image-set(
         url('/img/1bg@2x.avif') type('image/avif') 2x,
@@ -20,7 +20,8 @@
         align-items: center;
     }
     &__banner {
-        max-width: 795px;
+        max-width: 100%;
+        width: 795px;
         margin-bottom: 2px;
     }
     &__date {
