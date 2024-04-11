@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     padding-bottom: 60px;
-    padding-top: calc(476 / 1440 * 100%);
+    padding-top: calc(476 / 1440 * 100%); /* отступ до верха/ширина экрана */
     background-image: 
     image-set(
         url('/img/1bg@2x.avif') type('image/avif') 2x,
