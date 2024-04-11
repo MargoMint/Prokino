@@ -1,10 +1,10 @@
 .trailers {
-    padding: 60px 0 120px 0;
+    padding: 60px 0 120px;
     &__buttons {
         display: flex;
         gap: 12px;
         align-items: center;
-        padding-bottom: 16px;
+        margin-bottom: 16px;
     }
     &__button {
         border-radius: 8px;
@@ -16,6 +16,7 @@
         text-align: center;
         color: #fff;
         transition: .2s all;
+        white-space: nowrap;
         &_active, &:focus {
             background-color: #ff3d00;
         }

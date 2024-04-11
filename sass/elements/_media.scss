@@ -37,10 +37,13 @@
             font-size: 16px;
         }
     }
+    .trailers {
+        padding: 50px 0 100px;
+    }
 }
 @media (max-width: 900px) {
     .container {
-        padding: 0 44px;
+        padding: 0 44px !important;
     }
     .header {
         &__container {
@@ -87,10 +90,21 @@
             max-width: 370px;
         }
     }
+    .trailers {
+        padding: 40px 0 80px;
+        &__buttons {
+            gap: 8px;
+        }
+        &__button {
+            width: 99px;
+            font-size: 12px;
+            padding: 10px 16px;
+        }
+    }
 }
 @media (max-width: 620px) {
     .container {
-        padding: 0 16px;
+        padding: 0 16px !important;
     }
     .header {
         &__container {
@@ -129,13 +143,30 @@
         padding: 30px 0;
         &__container {
             &:after {
-                flex-basis: 436px;
-                background-image: url('/img/bg2.jpg');
+                flex-basis: 268px;
+                background-image: url('/img/aang320@2x.jpg');
             }
         }
         &__title {
             font-size: 28px;
             margin-bottom: 16px;
+        }
+    }
+    .trailers {
+        padding: 30px 0 60px; /*  верх право-лево и низ */
+        &__container {
+            padding: 0 !important;
+        }
+        &__buttons {
+            padding: 0 16px;
+            overflow-x: scroll;
+            scrollbar-width: none; /* кнопки на моб версии будут скролиться,но без нижней полоски */
+            ::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &__list {
+            padding: 0 16px;
         }
     }
 }
