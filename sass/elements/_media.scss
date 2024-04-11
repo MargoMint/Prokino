@@ -101,6 +101,18 @@
             padding: 10px 16px;
         }
     }
+    .footer {
+        padding: 32px 0;
+        &__container {
+            gap: 20px;
+        }
+        &__logo {
+            width: 217px;
+        }
+        &__developer, &__link, &__copyright {
+            font-size: 12px;
+        }
+    }
 }
 @media (max-width: 620px) {
     .container {
@@ -167,6 +179,19 @@
         }
         &__list {
             padding: 0 16px;
+        }
+    }
+    .footer {
+        padding: 20px 0;
+        &__container { /* нарисовали сетку на 1 колонкy и на 3 строки */
+            grid-template-areas: 
+                "logo"
+                "developers"
+                "copyright";
+        }
+        &__logo {
+            margin-bottom: 4px;
+            justify-self: start; /* в гриде прижать к левому краю */
         }
     }
 }
