@@ -10,12 +10,12 @@
         }
         background-image: 
             image-set(
-                url('/img/1bg-1024@2x.avif') type('image/avif') 2x,
-                url('/img/1bg-1024.avif') type('image/avif'),
-                url('/img/1bg-1024@2x.webp') type('image/webp') 2x,
-                url('/img/1bg-1024.webp') type('image/webp'),
-                url('/img/1bg-1024@2x.jpg') 2x,
-                url('/img/1bg-1024.jpg')
+                url('../img/1bg-1024@2x.avif') type('image/avif') 2x,
+                url('../img/1bg-1024.avif') type('image/avif'),
+                url('../img/1bg-1024@2x.webp') type('image/webp') 2x,
+                url('../img/1bg-1024.webp') type('image/webp'),
+                url('../img/1bg-1024@2x.jpg') 2x,
+                url('../img/1bg-1024.jpg')
             );
     }
     .about {
@@ -23,7 +23,7 @@
         &__container {
             &:after {
                 flex-basis: 50%;
-                background-image: url('/img/aang1024.jpg');
+                background-image: url('../img/aang1024.jpg');
             }
         }
         &__content {
@@ -66,12 +66,12 @@
         }
         background-image: 
             image-set(
-                url('/img/1bg-768@2x.avif') type('image/avif') 2x,
-                url('/img/1bg-768.avif') type('image/avif'),
-                url('/img/1bg-768@2x.webp') type('image/webp') 2x,
-                url('/img/1bg-768.webp') type('image/webp'),
-                url('/img/1bg-768@2x.jpg') 2x,
-                url('/img/1bg-768.jpg')
+                url('../img/1bg-768@2x.avif') type('image/avif') 2x,
+                url('../img/1bg-768.avif') type('image/avif'),
+                url('../img/1bg-768@2x.webp') type('image/webp') 2x,
+                url('../img/1bg-768.webp') type('image/webp'),
+                url('../img/1bg-768@2x.jpg') 2x,
+                url('../img/1bg-768.jpg')
             );
     }
     .about {
@@ -80,7 +80,7 @@
             flex-direction: column;
             &:after {
                 flex-basis: 300px; /* высота картинки, т.к. направление по колонкам, а не строкам */
-                background-image: url('/img/aang768@2x.jpg');
+                background-image: url('../img/aang768@2x.jpg');
             }
         }
         &__content {
@@ -143,12 +143,12 @@
         }
         background-image: 
             image-set(
-                url('/img/1bg-320@2x.avif') type('image/avif') 2x,
-                url('/img/1bg-320.avif') type('image/avif'),
-                url('/img/1bg-320@2x.webp') type('image/webp') 2x,
-                url('/img/1bg-320.webp') type('image/webp'),
-                url('/img/1bg-320@2x.jpg') 2x,
-                url('/img/1bg-320.jpg')
+                url('../img/1bg-320@2x.avif') type('image/avif') 2x,
+                url('../img/1bg-320.avif') type('image/avif'),
+                url('../img/1bg-320@2x.webp') type('image/webp') 2x,
+                url('../img/1bg-320.webp') type('image/webp'),
+                url('../img/1bg-320@2x.jpg') 2x,
+                url('../img/1bg-320.jpg')
             );
     }
     .about {
@@ -156,7 +156,7 @@
         &__container {
             &:after {
                 flex-basis: 268px;
-                background-image: url('/img/aang320@2x.jpg');
+                background-image: url('../img/aang320@2x.jpg');
             }
         }
         &__title {
