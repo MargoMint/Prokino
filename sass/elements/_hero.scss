@@ -6,12 +6,12 @@
     padding-top: calc(476 / 1440 * 100%); /* отступ до верха/ширина экрана */
     background-image: 
     image-set(
-        url('/img/1bg@2x.avif') type('image/avif') 2x,
-        url('/img/1bg.avif') type('image/avif'),
-        url('/img/1bg@2x.webp') type('image/webp') 2x,
-        url('/img/1bg.webp') type('image/webp'),
-        url('/img/1bg@2x.jpg') 2x,
-        url('/img/1bg.jpg')
+        url('../img/1bg@2x.avif') type('image/avif') 2x,
+        url('../img/1bg.avif') type('image/avif'),
+        url('../img/1bg@2x.webp') type('image/webp') 2x,
+        url('../img/1bg.webp') type('image/webp'),
+        url('../img/1bg@2x.jpg') 2x,
+        url('../img/1bg.jpg')
     );
     &__container {
         display: flex;
