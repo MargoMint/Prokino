@@ -25,7 +25,6 @@ const createListTrailers = (parent, srcList) => {
 
         const trailersVideo = document.createElement('iframe');
         trailersVideo.classList.add('trailers__video');
-        trailersVideo.dataset.src = src;
         trailersWrapper.append(trailersVideo);
         trailerFrames.push(trailersVideo);
 
