@@ -87,10 +87,10 @@ const createListTrailers = (parent, srcList) => {
 const controlTrailer = (trailerWrappers, trailerFrames, i = 0, j = 0) => {
     if (i !== j) {
         trailerWrappers[i].style.display = 'none';
-        trailerFrames[i].src = '';
+        trailerFrames[i].srcdoc = '';
     } else {
         trailerWrappers[i].style.display = 'block';
-        trailerFrames[i].src = trailerFrames[i].dataset.src;
+        trailerFrames[i].srcdoc = trailerFrames[i].dataset.srcdoc;
     }
 }
 
@@ -103,10 +103,14 @@ const init = () => {
     trailersButtons.forEach((btn) => {
         srcList.push(btn.dataset.src);
     });
-    const { trailerWrappers, trailerFrames } = createListTrailers(trailersContainer, srcList)
+    const { trailerWrappers, trailerFrames } = createListTrailers(
+        trailersContainer, 
+        srcList,
+    );
 
     /* метод запускает колбэк функцию, запустит столько раз, сколько кнопок */
     trailersButtons.forEach((btn, j) => {
+        trailerFrames[j].dataset.srcdoc = trailerFrames[j].srcdoc;
         btn.addEventListener('click', () => {
             trailersButtons.forEach((tBtn, i) => {
                 if (tBtn === btn) {
